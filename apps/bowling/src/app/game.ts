@@ -1,12 +1,16 @@
 export class Game {
-    basket: any;
-    checkout(): any {
-	    throw new Error('Method not implemented.');
+    basket: Book[] = [];
+
+    checkout(): number {
+        return -1;
     }
-    createBook(number: number): any {
-	    throw new Error('Method not implemented.');
+
+    createBook(bookNumber: number): Book {
+        return new Book(bookNumber);
     }
-    addToBasket(arg0: any) {
-	    throw new Error('Method not implemented.');
+
+    addToBasket(book: Book) {
+        this.basket.push(book);   
+        
     }
 }
