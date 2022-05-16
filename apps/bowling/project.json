@@ -82,7 +82,7 @@
         "passWithNoTests": true,
         "coverage": true,
         "outputFile": "result.json",
-        "json": true
+        "json": true 
       }
     }
   },
