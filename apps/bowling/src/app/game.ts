@@ -1,11 +1,8 @@
 export class Game {
-    class Book {
-        constructor(protected bookNumber: number) {}
-    }
     basket: Book[] = [];
 
     checkout(): number {
-        return -1;
+        return -1
     }
 
     createBook(bookNumber: number): Book {
@@ -16,4 +13,8 @@ export class Game {
         this.basket.push(book);   
 
     }
+}
+
+class Book {
+    constructor(protected bookNumber: number) {}
 }
